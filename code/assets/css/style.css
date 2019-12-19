@@ -1,7 +1,15 @@
 html,
-body,
-#map-id {
-  height: 100%;
+body {
   padding: 0;
   margin: 0;
 }
+
+/* Used for app.js */
+/* .bar {
+  fill: #1B813E;
+}
+
+.bar:hover {
+  fill: #E98B2A;
+} */
+
