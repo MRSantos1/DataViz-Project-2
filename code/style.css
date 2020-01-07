@@ -1,8 +1,32 @@
-#box-one {
-    background-color: gray;
-    }
- 
- #box-two {
-    background-color: yellow;
-    padding: 10px;
-    }
+<!--Making a full screen background to make this thang pretttttyy  -->
+body, html {
+   height: 100%;
+   margin: 0;
+   color: black;
+   font-family: Arial, Helvetica, sans-serif ;
+}
+
+a {
+   color: black;
+   text-decoration: none;
+}
+
+body {
+   background: url( "../code/images/BayAreaBG.jpeg") no-repeat;
+   background-size: cover; 
+   background-size: 500px
+   width: 160px;
+  height: 120px;
+   padding-bottom: 5px;
+}
+
+h1 {
+   font-size: 2em;
+   background-color: white
+}
+
+.nav-item dropdown {
+   font-size: 2em;
+   background-color: white;
+   position: relative;
+}

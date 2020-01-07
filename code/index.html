@@ -4,15 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Enrollment Map | South San Francisco</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+  <!-- Link CSS SHIEEET -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- DONT FORGET YOUR JAVASCRIPT -->
+  <script src="script.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="style.css">
+<div ng-view></div>
+
 </head>
 <body>
+<h1><a href="https://www.ssfusd.org/">South San Francisco Unified School District</a></h1>
   <ul class="nav nav-tabs">
     <li class="nav-item">
       <a class="nav-link active" href="#">Home</a>
@@ -20,37 +29,44 @@
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
       <div class="dropdown-menu">
-        <!-- Create drop downs for different parts of the page (i.e ) -->
+        <!-- Create drop downs for different parts of the page -->
         <a class="dropdown-item" href="#">San Mateo County Map</a>
         <a class="dropdown-item" href="#">Student Enroll Bar Chart</a>
         <a class="dropdown-item" href="#">Median Household of SMC</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Separated link</a>
       </div>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    <!-- Create drop downs for supporting links to declining student enrollment in CA -->
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-ha spopup="true" aria-expanded="false">Supporting Links</a>
+        <div class="dropdown-menu">
+            <a href="https://www.ppic.org/blog/declining-k-12-enrollment-forces-major-budget-cuts-in-many-districts/">Public Policy Institute of CA</a>
+            <br>
+            <a href="https://hechingerreport.org/the-number-of-public-school-students-could-fall-by-more-than-8-in-a-decade/">Hechinger Report</a>
+            <br>
+            <a href="https://edsource.org/2019/californias-k-12-enrollment-drops-again-charter-schools-see-increase/610573">Ed Source</a>
+            <div class="dropdown-divider"></div>
+        </div>
     </li>
   </ul>
-
-  <!-- <img src="../code/images/SMC_Seal_2018.png" alt="San Mateo County"> -->
   <div class="container">
-    <div class="jumbotron">
+    <div class="jumbotron jumbotron">
+        <a href= "http://www.smcgov.org">
+          <img src="../code/images/SSFUSD.png" alt="San Mateo County"width="150" height="150" href= "http://www.smcgov.org">
+          </a>
       <h6 class="display-7">Student Enrollment vs Cost of Living</h6>
        <br> Objective: <br>
          
        <br> To tell the story of the declining enrollment in the South San Francisco school district which Martin works in due to the increase cost of living. We pulled student enrollment demographic data of family income from the 16-17 and 17-18  school years. We plan to map of the school district boundaries, and median household income of the district. Once we have all of those we can show the areas of enrollment count,  median household income. For now we have the enrollment CSVs.</h1>
       <p class="lead">This is placed inside a container</p>
       <hr class="my-4">
-      <p>Here we can display some more text!</p>
+      
       <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
     </div>
   </div>
 
-<div class="container">
+<br>`
+<div class="container2">
   <h3 class="text-center">Thumbnails</h3>
     <div class="row">
         <div class="col-md-4">
@@ -90,13 +106,13 @@
         <h3 class="text-center">List Groups</h3>
         <ul class="list-group">
           <li class="list-group-item d-flex justify-content-between align-items-center">
-              San Mateo County Map <span class="badge badge-pill badge-secondary">10</span>
+              San Mateo County Map <span class="badge badge-pill badge-secondary"></span>
           </li>
           <li class="list-group-item d-flex justify-content-between align-items-center">
-              Student Enroll Bar Chart <span class="badge badge-pill badge-secondary">3</span>
+              Student Enroll Bar Chart <span class="badge badge-pill badge-secondary"></span>
           </li>
           <li class="list-group-item d-flex justify-content-between align-items-center">
-              Median Household vs Number of Student Enrolled Line Graph <span class="badge badge-pill badge-secondary">4</span>
+              Median Household vs Number of Student Enrolled Line Graph <span class="badge badge-pill badge-secondary"></span>
           </li>
         </ul>
     </div>
@@ -117,64 +133,8 @@
     </div>
 
 
-  <div class="row">
-    <div class="col">
-      <h3 class="text-center">Nav Tabs</h3>
-      <ul class="nav nav-tabs">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Active</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-      </div>
-  </div>
+ 
 
-    <div class="row">
-      <div class="col">
-        <h3 class="text-center">Nav Pills</h3>
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-        </div>
-    </div>
-
-
-    <div class="row">
-      <div class="col">
-        <h3 class="text-center">Alerts</h3>
-        <div class="alert alert-primary" role="alert">
-            Info Alert
-          </div>
-          <div class="alert alert-success" role="alert">
-            Success Alert
-          </div>
-          <div class="alert alert-danger" role="alert">
-            Danger Alert
-          </div>
-          <div class="alert alert-warning" role="alert">
-            Warning Alert
-          </div>
-        </div>
-    </div>
 
 
 
